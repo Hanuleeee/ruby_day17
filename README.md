@@ -8,9 +8,8 @@
 
 
 
-### jQuery
+## jQuery
 
-------
 
 * jQuery(요소 선택자, 이벤트 리스너) 
 
@@ -18,7 +17,7 @@
 
 
 
-#### 요소선택자
+### 요소선택자
 
 $ 에 우리가 사용할 jquery가 모두 담겨있다.
 
@@ -87,7 +86,7 @@ btn.on('mouseenter mouseout', function(){
 
 
 
-#### toggleClass : remove + add 기능
+### toggleClass : remove + add 기능
 
 >  http://api.jquery.com/toggleclass/
 
@@ -134,7 +133,7 @@ $('img').attr('style');   // 먼저찾은 값을 리턴
 
 
 
-#### 텍스트 바꾸기   : `.text` 메서드 
+### 텍스트 바꾸기   : `.text` 메서드 
 
 > https://www.w3schools.com/jquery/html_text.asp
 
@@ -165,9 +164,8 @@ btn.on('mouseover', function(){
 
 
 
-### 텍스트 변환기(오타치는 사람 놀리기)  - `Atom` 사용
+## 텍스트 변환기(오타치는 사람 놀리기)  - `Atom` 사용
 
-------
 
 > <https://github.com/e-/Hangul.js> 
 
@@ -266,9 +264,8 @@ btn.on('mouseover', function(){
 
 
 
-### Ajax(Asynchronous JavaScript and XML )
+## Ajax(Asynchronous JavaScript and XML )
 
-------
 
 * 에이젝스라고 부르기도 하고, 아약스라고도 불리기도 한다. jQuery를 사용하면 이 ajax를 매우 쉽게 사용할 수 있다. 자바스크립트 ajax에 대해서는 다음 문서를 참고한다.
 
@@ -308,9 +305,8 @@ $.ajax({
 
 
 
-### '좋아요' 버튼 만들기
+## '좋아요' 버튼 만들기
 
-------
 
 1. 좋아요 버튼을 눌렀을 때
 2. 서버에 요청을 보낸다. (현재 유저가 현재 보고있는 이 영화가 좋다고 하는 요청 )
@@ -332,7 +328,7 @@ t.integer   :movie_id
 
 
 
-#### 모델 관계 설정
+### 모델 관계 설정
 
 *app/models/like.rb*
 
