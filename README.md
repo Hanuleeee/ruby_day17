@@ -64,7 +64,7 @@ $('.btn').on('mouseover', function(){
 
 
 
-* mouse가 버튼위에 올라갔을 때, button에 있는 btn-primary 클래스를 삭제하고 btn-danger 클래스를 준다. mouse가 버튼에서 내려왔을 때, 다시 btn-danger 클래스를 삭제하고 btn-primary 클래스를 추가한다.
+* **mouse가 버튼위에 올라갔을 때, button에 있는 btn-primary 클래스를 삭제하고 btn-danger 클래스를 준다. mouse가 버튼에서 내려왔을 때, 다시 btn-danger 클래스를 삭제하고 btn-primary 클래스를 추가한다.**
 * 여러개의 이벤트 등록하기
 * 요소에 class를 넣고 빼는 jQuery function을 찾기.
 
@@ -185,7 +185,7 @@ btn.on('mouseover', function(){
 
 * `String.split('')` : `''`안에 있는 것을 기준으로 문자열을 잘라준다. (return type: 배열)
 
-* `Array.join('')` : 
+* `Array.join('')` :  배열에 들어있는 내용들을 `''`안에 있는 내용을 기준으로 합쳐줌 
 
 * `Array.map(function(el){})` : 배열을 순회하면서 하나의 요소마다 function을 실행시킴  
 
@@ -226,7 +226,7 @@ btn.on('mouseover', function(){
 
 4. 분해한 글자의 4번째 요소가 있는지 && 2,3 번째 요소가 모음이여야한다.
 
-5. switch
+5. 3번째 모음과 4번째 자음을 바꿔준다.(switch)
 
 6. 결과물로 나온 배열을 문자열로 이어준다( `join` )
 
@@ -266,14 +266,30 @@ btn.on('mouseover', function(){
 
 
 
-### Ajax
+### Ajax(Asynchronous JavaScript and XML )
 
 ------
+
+* 에이젝스라고 부르기도 하고, 아약스라고도 불리기도 한다. jQuery를 사용하면 이 ajax를 매우 쉽게 사용할 수 있다. 자바스크립트 ajax에 대해서는 다음 문서를 참고한다.
+
+* [참고1](https://developer.mozilla.org/ko/docs/Web/Guide/AJAX/Getting_Started), [참고2](https://opentutorials.org/course/1375/6843)
+
+  
 
 * 자바스크립트로 요청을 보내면 자바스크립트로 응답이 온다. 자바스크립트 중간에 서버로 요청을 보낸다.  응답으로 보낼 자바스크립트 코드에다가 ajax로 꾸며진걸 넣어서 보내준다. 
 
 * 요청을 보낼때 `route`에다가 어느 메소드(액션)으로 보낼지 지정해놓는다. 자바스크립트는 어디로 보내는지(`url`, `Http method`)만 알고 있으면 된다.
-* 화면전환없이 서버에다가 요청보내고 응답받을 수 있기때문에 많이 사용한다
+
+* 화면전환없이 서버에다가 요청보내고 응답받을 수 있기때문에 많이 사용한다.
+
+  
+
+- **레일즈에서 ajax를 구성하는 순서**는 다음과 같다.
+
+> 1. view.html.erb에서 ajax요청을 만든다.
+> 2. ajax요청을 받기 위한 route를 설정한다
+> 3. route에서 설정한 컨트롤러#액션을 선언한다.
+> 4. 해당 액션의 로직을 수행한 후 응답으로 보낼 js.erb파일을 생성한다. 여기서 js파일명은 액션명과 일치하는 것을 원칙으로 한다.
 
 
 
