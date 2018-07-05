@@ -8,12 +8,14 @@
 
 
 
+
 ## jQuery
 
 
 * jQuery(요소 선택자, 이벤트 리스너) 
 
 * 원래는 `jquery cdn`에서 가져와야하지만,`rails`에는 자바스크립트가 내장되어있다. 
+
 
 
 
@@ -86,6 +88,8 @@ btn.on('mouseenter mouseout', function(){
 
 
 
+
+
 ### toggleClass : remove + add 기능
 
 >  http://api.jquery.com/toggleclass/
@@ -133,6 +137,8 @@ $('img').attr('style');   // 먼저찾은 값을 리턴
 
 
 
+
+
 ### 텍스트 바꾸기   : `.text` 메서드 
 
 > https://www.w3schools.com/jquery/html_text.asp
@@ -164,6 +170,7 @@ btn.on('mouseover', function(){
 
 
 
+
 ## 텍스트 변환기(오타치는 사람 놀리기)  - `Atom` 사용
 
 
@@ -188,6 +195,7 @@ btn.on('mouseover', function(){
 * `Array.map(function(el){})` : 배열을 순회하면서 하나의 요소마다 function을 실행시킴  
 
   (el: 순회하는 각 요소, return type: 새로운 배열)
+
 
 
 
@@ -264,6 +272,8 @@ btn.on('mouseover', function(){
 
 
 
+
+
 ## Ajax(Asynchronous JavaScript and XML )
 
 
@@ -279,6 +289,7 @@ btn.on('mouseover', function(){
 
 * 화면전환없이 서버에다가 요청보내고 응답받을 수 있기때문에 많이 사용한다.
 
+  
   
 
 - **레일즈에서 ajax를 구성하는 순서**는 다음과 같다.
@@ -305,6 +316,8 @@ $.ajax({
 
 
 
+
+
 ## '좋아요' 버튼 만들기
 
 
@@ -325,6 +338,7 @@ hanullllje:~/watcha_app (master) $ rails g model like
 t.integer   :user_id  #추가
 t.integer   :movie_id
 ```
+
 
 
 
